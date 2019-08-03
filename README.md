@@ -37,7 +37,7 @@ request.onload = function() {
     }
 };
 setInterval(() => {
-    request.open("GET", "state.json", true);
+    request.open("GET", "./node_modules/replenish/state.json", true);
     request.send();
 }, 1000);
 ```
