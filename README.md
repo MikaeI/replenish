@@ -12,7 +12,17 @@
 
 ## Usage
 
-In a CLI, use the `replenish` command any time you want to perform a reload.
+Add the following script to your package.json:
+
+```
+"scripts": {
+  "replenish": "replenish"
+}
+```
+
+Now you can add `replenish` to other scripts or use it from the command line: `npm run replenish`.
+
+Use the `npm run replenish` command any time you want to perform a reload.
 
 Example of client side setup (1s polling interval):
 
