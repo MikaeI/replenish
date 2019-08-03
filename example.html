@@ -1,0 +1,15 @@
+<script>
+    let timestamp = Date.now();
+    let request = new XMLHttpRequest();
+    request.onload = function() {
+        if (this.status >= 200 && this.status < 400) {
+            if (JSON.parse(this.response).updated > timestamp) {
+                location.reload();
+            }
+        }
+    };
+    setInterval(() => {
+        request.open("GET", "state.json", true);
+        request.send();
+    }, 1000);
+</script>

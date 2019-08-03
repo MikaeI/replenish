@@ -1,0 +1,25 @@
+{
+  "name": "replenish",
+  "version": "1.0.0",
+  "description": "Development utility to trigger reload of a web page in a browser",
+  "main": "update.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikaeI/replenish.git"
+  },
+  "keywords": [
+    "live reload"
+  ],
+  "author": "Mikael Åsbjørnsson-Stensland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MikaeI/replenish/issues"
+  },
+  "bin": {
+    "replenish": "./update.js"
+  },
+  "homepage": "https://github.com/MikaeI/replenish#readme"
+}
