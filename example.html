@@ -9,7 +9,8 @@
         }
     };
     setInterval(() => {
-        request.open("GET", "state.json", true);
+        dummy = Date.now();
+        request.open("GET", "./node_modules/replenish/state.json?q=" + dummy, true);
         request.send();
     }, 1000);
 </script>

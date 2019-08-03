@@ -1,6 +1,6 @@
 # replenish
 
-> Development utility to trigger reload of a web page in a browser.
+> Development utility to trigger reload of a web page in a browser (alternative to LiveReload).
 
 ## Requirements
 
@@ -37,7 +37,8 @@ request.onload = function() {
     }
 };
 setInterval(() => {
-    request.open("GET", "./node_modules/replenish/state.json", true);
+    dummy = Date.now();
+    request.open("GET", "./node_modules/replenish/state.json?q=" + dummy, true);
     request.send();
 }, 1000);
 ```
