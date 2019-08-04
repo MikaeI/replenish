@@ -1,6 +1,6 @@
 {
   "name": "replenish",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Development utility to trigger reload of a web page in a browser (alternative to LiveReload)",
   "main": "update.js",
   "scripts": {
@@ -19,7 +19,8 @@
     "url": "https://github.com/MikaeI/replenish/issues"
   },
   "bin": {
-    "replenish": "./update.js"
+    "replenish": "./update.js",
+    "will-replenish": "./working.js"
   },
   "homepage": "https://github.com/MikaeI/replenish#readme"
 }
